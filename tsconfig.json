@@ -17,13 +17,18 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["*"],
-      "~components/*": ["src/components/*"],
       "~lib/*": ["src/lib/*"],
       "~utils/*": ["src/utils/*"],
       "~config/*": ["src/config/*"],
-      "~types/*": ["src/config/types/*"]
+      "~types/*": ["src/config/types/*"],
+      "~components/*": ["src/components/*"],
+      "@section/*": ["src/components/section/*"],
+      "@layout/*": ["src/components/layout/*"],
+      "@pages/*": ["src/components/pages/*"],
+      "@other/*": ["src/components/other/*"],
+      "@discord/*": ["src/components/section/discord/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.d.ts"],
   "exclude": ["node_modules"]
 }
