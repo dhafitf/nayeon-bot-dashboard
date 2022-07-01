@@ -9,7 +9,7 @@ export default function InviteButton({ className }: { className?: string }) {
         "flex items-center font-bold",
         className ? className : "gap-2 px-3 py-1 md:my-4"
       )}
-      href="https://discord.com/oauth2/authorize?client_id=939369011773321336&permissions=139855326334&scope=bot%20applications.commands"
+      href="/invite"
       rel="nofollow noopener noreferrer"
       target="_blank"
     >
