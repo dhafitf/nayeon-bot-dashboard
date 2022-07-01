@@ -10,3 +10,10 @@ export interface ContainerProps extends ChildrenProps {
   size?: "md" | "lg" | "xl";
   className?: string;
 }
+
+export interface LinkProps {
+  href: string;
+  text: string;
+  isOutsite?: boolean;
+  className?: string;
+}
