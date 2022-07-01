@@ -5,7 +5,7 @@ import clsx from "~utils/clsx";
 import Container from "@layout/container";
 import InviteButton from "@other/inviteButton";
 
-export default function Header() {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
