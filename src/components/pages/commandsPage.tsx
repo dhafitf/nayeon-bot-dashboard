@@ -30,7 +30,7 @@ export default function CommandsPage({ commandLists }: commandListsProps) {
     <>
       <Container size="lg">
         <h2 className="my-8 text-center text-3xl font-bold max-md:text-center">Commands</h2>
-        <div className="flex gap-6 max-md:flex-col">
+        <div className="mb-10 flex gap-6 max-md:flex-col">
           <div className="md:commandCategory h-fit md:w-[20%] md:rounded-lg md:bg-[#3c4146] md:px-3 md:py-4">
             <input
               type="text"
