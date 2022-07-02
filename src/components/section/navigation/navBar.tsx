@@ -1,9 +1,11 @@
+import Links from "@other/links";
 import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
 import headerLists from "~utils/headerLists.json";
 import clsx from "~utils/clsx";
 import Container from "@layout/container";
 import InviteButton from "@other/inviteButton";
+import { LinkProps } from "~types/components";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,12 +48,9 @@ export default function Navbar() {
               isOpen ? "right-0 bg-body" : "-right-full"
             )}
           >
-            {headerLists.map((item, index) => {
-              return (
-                <Link key={index} href={item.url}>
-                  <a className="hover:text-main-color whitespace-nowrap hover:underline">{item.name}</a>
-                </Link>
-              );
+            {headerLists.map((item: LinkProps, index: number) => {
+              const { text, href, isOutsite } = item;
+              return <Links key={index} href={href} className="hover:text-main-color whitespace-nowrap hover:underline" text={text} isOutsite={isOutsite} />;
             })}
             <InviteButton />
           </nav>

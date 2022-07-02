@@ -1,14 +1,17 @@
 [
   {
-    "name": "Home",
-    "url": "/"
+    "text": "Home",
+    "href": "/",
+    "isOutsite": false
   },
   {
-    "name": "Commands",
-    "url": "/commands"
+    "text": "Commands",
+    "href": "/commands",
+    "isOutsite": false
   },
   {
-    "name": "Support",
-    "url": "/support"
+    "text": "Support",
+    "href": "/support",
+    "isOutsite": true
   }
 ]
