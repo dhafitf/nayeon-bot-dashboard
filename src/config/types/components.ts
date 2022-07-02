@@ -1,5 +1,6 @@
 import { CSSProperties } from "react";
 import { ChildrenProps } from "./default";
+import { DiscordMessageProps } from "./discord";
 
 export interface LayoutProps extends ChildrenProps {
   className?: string;
@@ -16,4 +17,14 @@ export interface LinkProps {
   text: string;
   isOutsite?: boolean;
   className?: string;
+}
+
+export interface CommandItemProps {
+  name: string;
+  description: string;
+  aliases?: string[];
+  category?: string;
+  examples: {
+    message: DiscordMessageProps[];
+  };
 }
