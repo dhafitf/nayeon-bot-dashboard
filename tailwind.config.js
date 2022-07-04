@@ -24,6 +24,9 @@ module.exports = {
         "max-mid": { max: "916px" },
         "max-md": { max: "767px" },
       },
+      spacing: {
+        screenNoHeader: "calc(100vh - var(--header-height) * 1px)",
+      },
     },
   },
   plugins: [],
