@@ -150,4 +150,8 @@
     position: sticky;
     top: calc(1px * var(--header-height) + 24px);
   }
+
+  .screenNoHeader {
+    min-height: calc(100vh - var(--header-height) * 1px);
+  }
 }
