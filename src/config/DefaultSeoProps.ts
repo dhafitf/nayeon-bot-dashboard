@@ -3,7 +3,7 @@ import type { AdditionalRobotsProps } from "next-seo/lib/types";
 
 export const BaseUrl = "https://bot.oncetwice.one/";
 export const DefaultSeoProps: DefaultSeoPropsType = {
-  titleTemplate: "Nayeon Bot | %s",
+  titleTemplate: "%s | Nayeon Bot",
   title: "Home",
   description: "Nayeon bot is a bot dedicated to notifying updates from TWICE, and also provides other commands.",
   canonical: BaseUrl,
