@@ -6,7 +6,7 @@ export default function ErrorPage() {
   return (
     <>
       <GeneralPage>
-        <Container size="md" className="flex h-[calc(100vh_-_var(--header-height)_*_1px)] flex-col items-center justify-center">
+        <Container size="md" className="flex h-screenNoHeader flex-col items-center justify-center">
           <div className="text-center text-4xl font-semibold">Woah, looks like you got lost and ended up here!</div>
           <div className="flex items-center gap-6 pt-8 max-md:flex-col">
             <Links href="/" className="w-48 cursor-pointer rounded-md bg-[#46494D] py-2 text-center text-lg transition-colors hover:bg-[#5a5e63]" text="Go back home" />
