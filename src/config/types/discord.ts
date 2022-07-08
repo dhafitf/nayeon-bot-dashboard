@@ -9,6 +9,7 @@ export interface DiscordMessageContentProps extends ChildrenProps {
   name?: string;
   isBot?: boolean;
   color?: string;
+  timestamp?: string;
 }
 
 export interface DiscordEmbedAuthorProps extends DiscordAuthorProps {
@@ -59,11 +60,22 @@ export interface DiscordEmbedProps extends DiscordEmbedTitleProps {
   timestamp?: any;
 }
 
+interface DiscordReplyMessageProps {
+  name: string;
+  icon_url: string;
+  color?: string;
+  isBot?: boolean;
+  isSlashCommand?: boolean;
+  content: string;
+}
+
 export interface DiscordMessageProps {
   name: string;
   icon_url: string;
   isBot: boolean;
   color: string;
+  timestamp?: string;
+  replyContent?: DiscordReplyMessageProps;
   content?: string;
   attachment?: string[];
   embeds?: DiscordEmbedProps[];
