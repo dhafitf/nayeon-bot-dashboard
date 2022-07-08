@@ -2,8 +2,9 @@ import { DiscordMessageContentProps } from "~/src/config/types/discord";
 import VerifiedTag from "../verifiedTag";
 
 export default function DiscordMessageContent(props: DiscordMessageContentProps) {
-  const { name, isBot, color, children } = props;
+  const { name, isBot, color, timestamp, children } = props;
   const nickColor = color ? { color: color } : {};
+  const time = timestamp ? timestamp : "06/29/2022";
   return (
     <div className="discord-message-body">
       <span className="discord-author-info">
@@ -16,7 +17,7 @@ export default function DiscordMessageContent(props: DiscordMessageContentProps)
             <span className="leading-[.9375rem]">BOT</span>
           </span>
         )}
-        <span className="discord-message-timestamp">06/29/2022</span>
+        <span className="discord-message-timestamp">{time}</span>
       </span>
       <div className="discord-message-body">{children}</div>
     </div>
