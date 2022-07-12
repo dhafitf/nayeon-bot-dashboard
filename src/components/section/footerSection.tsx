@@ -19,9 +19,9 @@ export default function FooterSection() {
             <div className="pb-3 text-lg font-semibold">Quick Links</div>
             <div className="flex flex-col gap-1">
               <Links className="hover:underline" href="/commands" text="Commands" />
-              <Links className="hover:underline" isOutsite href="https://docs.nayeon.host/" text="Documentation" />
-              <Links className="hover:underline" isOutsite href="https://docs.nayeon.host/other/privacy-policy" text="Privacy Policy" />
-              <Links className="hover:underline" isOutsite href="https://docs.nayeon.host/other/terms-of-services" text="Terms of Services" />
+              <Links className="hover:underline" href="/docs" text="Documentation" />
+              <Links className="hover:underline" href="/docs/privacy-policy" text="Privacy Policy" />
+              <Links className="hover:underline" href="/docs/terms" text="Terms of Services" />
             </div>
           </div>
           <div className="row-[1/3] max-md:text-end">
