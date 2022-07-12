@@ -1,0 +1,95 @@
+import DocsLayout from "@pages/docsPage";
+import DiscordMessage from "@section/discord/discordMessage";
+
+export const transtaleFeatureMessage = [
+  {
+    name: "devzfz",
+    icon_url: "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+    isBot: false,
+    color: "#ff7a47",
+    timestamp: "Today at 10:10 PM",
+    content: ";t おはようございます",
+  },
+  {
+    name: "Nayeon",
+    icon_url: "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+    isBot: true,
+    color: "#4791ff",
+    timestamp: "Today at 10:10 PM",
+    embeds: [
+      {
+        color: "#4752c4",
+        author: {
+          name: "devzfz#1415",
+          icon_url: "https://cdn.discordapp.com/attachments/946644664134533161/992087715711565844/channels4_profile.jpg",
+        },
+        description: "good morning",
+        timestamp: "Japanese → English",
+      },
+    ],
+  },
+  {
+    name: "devzfz",
+    icon_url: "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+    isBot: false,
+    color: "#ff7a47",
+    timestamp: "Today at 10:11 PM",
+    content: ";t ?id おはようございます",
+  },
+  {
+    name: "Nayeon",
+    icon_url: "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+    isBot: true,
+    color: "#4791ff",
+    timestamp: "Today at 10:11 PM",
+    embeds: [
+      {
+        color: "#4752c4",
+        author: {
+          name: "devzfz#1415",
+          icon_url: "https://cdn.discordapp.com/attachments/946644664134533161/992087715711565844/channels4_profile.jpg",
+        },
+        description: "Selamat pagi",
+        timestamp: "Japanese → Indonesian",
+      },
+    ],
+  },
+  {
+    name: "devzfz",
+    icon_url: "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+    isBot: false,
+    color: "#ff7a47",
+    timestamp: "Today at 10:14 PM",
+    content:
+      ";t ?en TWICE adalah grup vokal wanita asal Korea Selatan yang dibentuk oleh JYP Entertainment. Grup ini terdiri dari sembilan anggota, yaitu Nayeon, Jeongyeon, Momo, Sana, Jihyo, Mina, Dahyun, Chaeyoung, dan Tzuyu.",
+  },
+  {
+    name: "Nayeon",
+    icon_url: "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+    isBot: true,
+    color: "#4791ff",
+    timestamp: "Today at 10:14 PM",
+    embeds: [
+      {
+        color: "#4752c4",
+        author: {
+          name: "devzfz#1415",
+          icon_url: "https://cdn.discordapp.com/attachments/946644664134533161/992087715711565844/channels4_profile.jpg",
+        },
+        description:
+          "Twice is a female vocal group from South Korea formed by JYP Entertainment. This group consists of nine members, namely Nayeon, Jeongyeon, Momo, Sana, Jihyo, Mina, Dahyun, Chaeyoung, and Tzuyu.",
+        timestamp: "Indonesian → English",
+      },
+    ],
+  },
+];
+
+# Translator
+
+Nayeon bot can translate the sentence or word you ask. You can set the text to be translated to a language with `?[iso_lang]`. _(The default language is English)_
+
+[See all iso language in here](https://docs.nayeon.host/language-code-list)
+
+<DiscordMessage message={transtaleFeatureMessage} />
+
+export default ({ children }) => <DocsLayout children={children} />;
