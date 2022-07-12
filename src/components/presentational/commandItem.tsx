@@ -1,10 +1,11 @@
 import DiscordMessage from "@discord/discordMessage";
 import { useState } from "react";
 import { CommandItemProps } from "~types/components";
-import clsx from "~/src/utils/clsx";
+import clsx from "~utils/clsx";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import CommandUsageItem from "./commandUsageItem";
 
-export default function CommandItem({ name, description, aliases, examples }: CommandItemProps) {
+export default function CommandItem({ name, description, aliases, usages, examples }: CommandItemProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpen = () => {
@@ -30,7 +31,7 @@ export default function CommandItem({ name, description, aliases, examples }: Co
       </div>
       <div className={clsx("overflow-hidden text-sm transition-all duration-500", isOpen ? "max-h-[1000px]" : "max-h-0")}>
         <div className="px-4 py-4">
-          <div className="mb-4">{description}</div>
+          <div className="mb-2">{description}</div>
           {aliases && (
             <div className="inline-flex items-center">
               <div className="pr-2 text-base font-semibold">Aliases :</div>
@@ -45,8 +46,22 @@ export default function CommandItem({ name, description, aliases, examples }: Co
               </div>
             </div>
           )}
-          <div className="mb-2 mt-2 text-base font-semibold">Examples</div>
-          <DiscordMessage message={examples.message} />
+          {usages && (
+            <div>
+              <div className="my-2 pr-2 text-base font-semibold">Usages :</div>
+              <div className="flex flex-col gap-2">
+                {usages.map((usage) => {
+                  return <CommandUsageItem key={usage} text={usage} />;
+                })}
+              </div>
+            </div>
+          )}
+          {examples && (
+            <>
+              <div className="mb-2 mt-2 text-base font-semibold">Examples</div>
+              <DiscordMessage message={examples.message} />
+            </>
+          )}
         </div>
       </div>
     </div>
