@@ -1,0 +1,62 @@
+[
+  {
+    "name": "twice",
+    "description": "Send random TWICE member's pictures.",
+    "category": "Image",
+    "usages": [";twice"]
+  },
+  {
+    "name": "nayeon",
+    "description": "Send random Nayeon member's pictures.",
+    "category": "Image",
+    "usages": [";nayeon"]
+  },
+  {
+    "name": "jeongyeon",
+    "description": "Send random Jeongyeon's picture.",
+    "category": "Image",
+    "usages": [";jeongyeon"]
+  },
+  {
+    "name": "momo",
+    "description": "Send random Momo's picture.",
+    "category": "Image",
+    "usages": [";momo"]
+  },
+  {
+    "name": "sana",
+    "description": "Send random Sana's picture.",
+    "category": "Image",
+    "usages": [";sana"]
+  },
+  {
+    "name": "jihyo",
+    "description": "Send random Jihyo's picture.",
+    "category": "Image",
+    "usages": [";jihyo"]
+  },
+  {
+    "name": "mina",
+    "description": "Send random Mina's picture.",
+    "category": "Image",
+    "usages": [";mina"]
+  },
+  {
+    "name": "dahyun",
+    "description": "Send random Dahyun's picture.",
+    "category": "Image",
+    "usages": [";dahyun"]
+  },
+  {
+    "name": "chaeyoung",
+    "description": "Send random Chaeyoung's picture.",
+    "category": "Image",
+    "usages": [";chaeyoung"]
+  },
+  {
+    "name": "tzuyu",
+    "description": "Send random Tzuyu's picture.",
+    "category": "Image",
+    "usages": [";tzuyu"]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "8ball",
+    "description": "Ask a question and Nayeon bot will answer it.",
+    "category": "Fun",
+    "usages": [";8ball am I need him?"]
+  },
+  {
+    "name": "choose",
+    "description": "Nayeon bot will choose between multiple options.",
+    "category": "Fun",
+    "usages": [";choose option1|option2|option3"]
+  },
+  {
+    "name": "coinflip",
+    "description": "Flip a coin.",
+    "category": "Fun",
+    "usages": [";coinflip", ";flip"]
+  },
+  {
+    "name": "owofy",
+    "description": "owofy a message.",
+    "category": "Fun",
+    "usages": [";owofy Translated English to owo"]
+  },
+  {
+    "name": "rate",
+    "description": "Nayeon bot will rate somebody.",
+    "category": "Fun",
+    "usages": [";rate @user"]
+  },
+  {
+    "name": "roll",
+    "description": "Roll a dice.",
+    "category": "Fun",
+    "usages": [";roll"]
+  },
+  {
+    "name": "rps",
+    "description": "Play Rock Paper Scissors.",
+    "category": "Fun",
+    "usages": [";rps"]
+  }
+]

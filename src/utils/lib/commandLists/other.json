@@ -1,0 +1,71 @@
+[
+  {
+    "name": "setprefix",
+    "description": "Set bot Prefix.",
+    "category": "Other",
+    "usages": [";setprefix <new prefix>"]
+  },
+  {
+    "name": "translate",
+    "description": "Translates text from one language to another.",
+    "category": "Other",
+    "aliases": ["t"],
+    "usages": [";t <text>", ";t ?<language> <text>"],
+    "examples": {
+      "message": [
+        {
+          "name": "devzfz",
+          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "isBot": false,
+          "color": "#ffad47",
+          "timestamp": "Today at 10:10 PM",
+          "content": ";t おはようございます"
+        },
+        {
+          "name": "Nayeon",
+          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "isBot": true,
+          "color": "#4791ff",
+          "timestamp": "Today at 10:10 PM",
+          "embeds": [
+            {
+              "color": "#4752c4",
+              "author": {
+                "name": "devzfz#1415",
+                "icon_url": "https://cdn.discordapp.com/attachments/946644664134533161/992087715711565844/channels4_profile.jpg"
+              },
+              "description": "good morning",
+              "timestamp": "Japanese → English"
+            }
+          ]
+        },
+        {
+          "name": "devzfz",
+          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "isBot": false,
+          "color": "#ffad47",
+          "timestamp": "Today at 10:11 PM",
+          "content": ";t ?id おはようございます"
+        },
+        {
+          "name": "Nayeon",
+          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "isBot": true,
+          "color": "#4791ff",
+          "timestamp": "Today at 10:11 PM",
+          "embeds": [
+            {
+              "color": "#4752c4",
+              "author": {
+                "name": "devzfz#1415",
+                "icon_url": "https://cdn.discordapp.com/attachments/946644664134533161/992087715711565844/channels4_profile.jpg"
+              },
+              "description": "Selamat pagi",
+              "timestamp": "Japanese → Indonesian"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

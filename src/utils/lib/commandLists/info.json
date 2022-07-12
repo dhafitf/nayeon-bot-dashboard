@@ -1,0 +1,146 @@
+[
+  {
+    "name": "avatar",
+    "description": "Showing your avatar or another user's",
+    "category": "Info",
+    "aliases": ["ava"],
+    "usages": [";avatar", ";avatar @user", ";avatar 326471015175815179"],
+    "examples": {
+      "message": [
+        {
+          "name": "devzfz",
+          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "isBot": false,
+          "color": "#4fbf3b",
+          "content": ";avatar"
+        },
+        {
+          "name": "Nayeon",
+          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "isBot": true,
+          "color": "#4791ff",
+          "embeds": [
+            {
+              "color": "#4752c4",
+              "title": "devzfz#1415's avatar",
+              "url": "https://cdn.discordapp.com/avatars/326471015175815179/1661cfa1bc2233373ee29fee0e60ee9d.png",
+              "image": {
+                "url": "https://cdn.discordapp.com/avatars/326471015175815179/1661cfa1bc2233373ee29fee0e60ee9d.png?size=2048"
+              },
+              "timestamp": "Today at 10:18 PM"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "banner",
+    "description": "Showing your banner or another user's",
+    "category": "Info",
+    "usages": [";banner", ";banner @user", ";banner 326471015175815179"],
+    "examples": {
+      "message": [
+        {
+          "name": "devzfz",
+          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "isBot": false,
+          "color": "#4fbf3b",
+          "content": ";banner"
+        },
+        {
+          "name": "Nayeon",
+          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "isBot": true,
+          "color": "#4791ff",
+          "embeds": [
+            {
+              "color": "#4752c4",
+              "title": "devzfz#1415's banner",
+              "url": "https://cdn.discordapp.com/banners/326471015175815179/ae98c869a1502786b3eabe44721dfd35.png?size=2048",
+              "image": {
+                "url": "https://cdn.discordapp.com/banners/326471015175815179/ae98c869a1502786b3eabe44721dfd35.png?size=2048"
+              },
+              "timestamp": "Today at 10:20 PM"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "help",
+    "description": "Show help for all commands",
+    "category": "Info",
+    "usages": [";help", ";help [commandName]"]
+  },
+  {
+    "name": "invite",
+    "description": "Sending bot invitation link",
+    "category": "Info",
+    "usages": [";invite"]
+  },
+  {
+    "name": "userinfo",
+    "description": "Displays info about the user.",
+    "category": "Info",
+    "usages": [";userinfo", ";userinfo @user", ";userinfo 326471015175815179"],
+    "examples": {
+      "message": [
+        {
+          "name": "devzfz",
+          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "isBot": false,
+          "color": "#4fbf3b",
+          "content": ";userinfo"
+        },
+        {
+          "name": "Nayeon",
+          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "isBot": true,
+          "color": "#4791ff",
+          "embeds": [
+            {
+              "color": "#4752c4",
+              "title": "User profile",
+              "description": "Displaying info about the user.",
+              "thumbnail": {
+                "url": "https://cdn.discordapp.com/avatars/326471015175815179/1661cfa1bc2233373ee29fee0e60ee9d.png?size=2048"
+              },
+              "fields": [
+                {
+                  "name": "User tag",
+                  "value": "devzfz#1415",
+                  "inline": true
+                },
+                {
+                  "name": "User ID",
+                  "value": "326471015175815179",
+                  "inline": true
+                },
+                {
+                  "name": "Roles (2)",
+                  "value": "<@&946650002023927808> <@&946650002023927808>"
+                },
+                {
+                  "name": "Created at",
+                  "value": "Monday, 19 June 2017",
+                  "inline": true
+                },
+                {
+                  "name": "Joined at",
+                  "value": "Sunday, 23 July 2017",
+                  "inline": true
+                }
+              ],
+              "footer": {
+                "text": "GuildName"
+              },
+              "timestamp": "Today at 10:18 PM"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

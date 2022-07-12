@@ -1,0 +1,307 @@
+[
+  {
+    "name": "instagram",
+    "description": "Get notifications of instagram update.",
+    "category": "Notification",
+    "usages": ["/instagram"],
+    "examples": {
+      "message": [
+        {
+          "name": "Nayeon",
+          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "isBot": true,
+          "color": "#4791ff",
+          "replyContent": {
+            "name": "devzfz",
+            "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+            "isBot": false,
+            "color": "#4fbf3b",
+            "isSlashCommand": true,
+            "content": "instagram"
+          },
+          "embeds": [
+            {
+              "color": "#2f3136",
+              "title": "Instagram notification settings",
+              "description": "Nayeon will notify instagram updates from all official TWICE instagram accounts. *(Instagram story will not be mentioned)*.",
+              "thumbnail": {
+                "url": "https://cdn.discordapp.com/avatars/326471015175815179/1661cfa1bc2233373ee29fee0e60ee9d.png?size=2048"
+              },
+              "fields": [
+                {
+                  "name": "Channel Update",
+                  "value": "<#950316421332742164>",
+                  "inline": true
+                },
+                {
+                  "name": "Role Mention",
+                  "value": "<@&946650002023927808>",
+                  "inline": true
+                }
+              ]
+            }
+          ],
+          "buttons": [
+            {
+              "label": "Change channel",
+              "style": "SECONDARY",
+              "emoji": "<:hashtag:993867053062705153>"
+            },
+            {
+              "label": "Change role mention",
+              "style": "SECONDARY",
+              "emoji": "<:tag:993878794626678875>"
+            },
+            {
+              "label": "Help",
+              "style": "LINK",
+              "href": "/docs/socmed"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "bubble",
+    "description": "Get notifications of bubble update.",
+    "category": "Notification",
+    "usages": ["/bubble"],
+    "examples": {
+      "message": [
+        {
+          "name": "Nayeon",
+          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "isBot": true,
+          "color": "#4791ff",
+          "replyContent": {
+            "name": "devzfz",
+            "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+            "isBot": false,
+            "color": "#4fbf3b",
+            "isSlashCommand": true,
+            "content": "bubble"
+          },
+          "embeds": [
+            {
+              "color": "#2f3136",
+              "title": "Bubble notification settings",
+              "description": "Nayeon bot will send a message when there is a new bubble update from TWICE member.",
+              "thumbnail": {
+                "url": "https://cdn.discordapp.com/avatars/326471015175815179/1661cfa1bc2233373ee29fee0e60ee9d.png?size=2048"
+              },
+              "fields": [
+                {
+                  "name": "Channel Update",
+                  "value": "<#950316421332742164>",
+                  "inline": true
+                }
+              ]
+            }
+          ],
+          "buttons": [
+            {
+              "label": "Change channel",
+              "style": "SECONDARY",
+              "emoji": "<:hashtag:993867053062705153>"
+            },
+            {
+              "label": "Help",
+              "style": "LINK",
+              "href": "/docs/socmed"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "vlive",
+    "description": "Get notifications of vlive update.",
+    "category": "Notification",
+    "usages": ["/vlive"],
+    "examples": {
+      "message": [
+        {
+          "name": "Nayeon",
+          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "isBot": true,
+          "color": "#4791ff",
+          "replyContent": {
+            "name": "devzfz",
+            "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+            "isBot": false,
+            "color": "#4fbf3b",
+            "isSlashCommand": true,
+            "content": "vlive"
+          },
+          "embeds": [
+            {
+              "color": "#2f3136",
+              "title": "Vlive notification settings",
+              "description": "Nayeon will notify vlive updates from official TWICE vlive accounts.",
+              "thumbnail": {
+                "url": "https://cdn.discordapp.com/avatars/326471015175815179/1661cfa1bc2233373ee29fee0e60ee9d.png?size=2048"
+              },
+              "fields": [
+                {
+                  "name": "Channel Update",
+                  "value": "<#950316421332742164>",
+                  "inline": true
+                },
+                {
+                  "name": "Role Mention",
+                  "value": "<@&946650002023927808>",
+                  "inline": true
+                }
+              ]
+            }
+          ],
+          "buttons": [
+            {
+              "label": "Change channel",
+              "style": "SECONDARY",
+              "emoji": "<:hashtag:993867053062705153>"
+            },
+            {
+              "label": "Change role mention",
+              "style": "SECONDARY",
+              "emoji": "<:tag:993878794626678875>"
+            },
+            {
+              "label": "Help",
+              "style": "LINK",
+              "href": "/docs/socmed"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "youtube",
+    "description": "Get notifications of youtube update.",
+    "category": "Notification",
+    "usages": ["/youtube"],
+    "examples": {
+      "message": [
+        {
+          "name": "Nayeon",
+          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "isBot": true,
+          "color": "#4791ff",
+          "replyContent": {
+            "name": "devzfz",
+            "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+            "isBot": false,
+            "color": "#4fbf3b",
+            "isSlashCommand": true,
+            "content": "youtube"
+          },
+          "embeds": [
+            {
+              "color": "#2f3136",
+              "title": "Youtube notification settings",
+              "description": "Nayeon bot will send you a message when there is a new youtube video from official TWICE Korea & Japan youtube channel.",
+              "thumbnail": {
+                "url": "https://cdn.discordapp.com/avatars/326471015175815179/1661cfa1bc2233373ee29fee0e60ee9d.png?size=2048"
+              },
+              "fields": [
+                {
+                  "name": "Channel Update",
+                  "value": "<#950316421332742164>",
+                  "inline": true
+                },
+                {
+                  "name": "Role Mention",
+                  "value": "<@&946650002023927808>",
+                  "inline": true
+                }
+              ]
+            }
+          ],
+          "buttons": [
+            {
+              "label": "Change channel",
+              "style": "SECONDARY",
+              "emoji": "<:hashtag:993867053062705153>"
+            },
+            {
+              "label": "Change role mention",
+              "style": "SECONDARY",
+              "emoji": "<:tag:993878794626678875>"
+            },
+            {
+              "label": "Help",
+              "style": "LINK",
+              "href": "/docs/socmed"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "tiktok",
+    "description": "Get notifications of tiktok update.",
+    "category": "Notification",
+    "usages": ["/tiktok"],
+    "examples": {
+      "message": [
+        {
+          "name": "Nayeon",
+          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "isBot": true,
+          "color": "#4791ff",
+          "replyContent": {
+            "name": "devzfz",
+            "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+            "isBot": false,
+            "color": "#4fbf3b",
+            "isSlashCommand": true,
+            "content": "tiktok"
+          },
+          "embeds": [
+            {
+              "color": "#2f3136",
+              "title": "Tiktok notification settings",
+              "description": "Nayeon bot will send you a message when there is a new tiktok update from official TWICE Korea & Japan tiktok account.",
+              "thumbnail": {
+                "url": "https://cdn.discordapp.com/avatars/326471015175815179/1661cfa1bc2233373ee29fee0e60ee9d.png?size=2048"
+              },
+              "fields": [
+                {
+                  "name": "Channel Update",
+                  "value": "<#950316421332742164>",
+                  "inline": true
+                },
+                {
+                  "name": "Role Mention",
+                  "value": "<@&946650002023927808>",
+                  "inline": true
+                }
+              ]
+            }
+          ],
+          "buttons": [
+            {
+              "label": "Change channel",
+              "style": "SECONDARY",
+              "emoji": "<:hashtag:993867053062705153>"
+            },
+            {
+              "label": "Change role mention",
+              "style": "SECONDARY",
+              "emoji": "<:tag:993878794626678875>"
+            },
+            {
+              "label": "Help",
+              "style": "LINK",
+              "href": "/docs/socmed"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
