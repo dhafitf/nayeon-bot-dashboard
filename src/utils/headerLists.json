@@ -5,6 +5,11 @@
     "isOutsite": false
   },
   {
+    "text": "Docs",
+    "href": "/docs",
+    "isOutsite": false
+  },
+  {
     "text": "Commands",
     "href": "/commands",
     "isOutsite": false
