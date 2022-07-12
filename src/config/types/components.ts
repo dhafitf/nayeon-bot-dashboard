@@ -23,8 +23,14 @@ export interface CommandItemProps {
   name: string;
   description: string;
   aliases?: string[];
+  usages?: string[];
   category?: string;
-  examples: {
+  examples?: {
     message: DiscordMessageProps[];
   };
+}
+
+export interface DocsLayoutProps extends ChildrenProps {
+  title?: string;
+  description?: string;
 }
