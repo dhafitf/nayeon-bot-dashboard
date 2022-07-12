@@ -1,12 +1,24 @@
+import remarkGfm from "remark-gfm";
+import createMDX from "@next/mdx";
+
+const withMDX = createMDX({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [],
+  },
+});
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ["cdn.discordapp.com"],
   },
+  pageExtensions: ["ts", "tsx", "md", "mdx"],
 };
 
-module.exports = {
+export default withMDX({
   ...nextConfig,
   async redirects() {
     return [
@@ -20,6 +32,11 @@ module.exports = {
         destination: "https://discord.gg/pRs84TmR",
         permanent: true,
       },
+      {
+        source: "/docs",
+        destination: "/docs/quickstart",
+        permanent: false,
+      },
     ];
   },
-};
+});
