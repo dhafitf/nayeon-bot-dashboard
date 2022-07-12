@@ -2,10 +2,12 @@ import Image from "next/image";
 import { DiscordEmbedProps } from "~types/discord";
 import { DiscordEmbedAuthor, DiscordEmbedFields, DiscordEmbedTitle, DiscordEmbedFooter } from "./";
 import { DiscordMessageImage } from "../message";
+import { Markdown } from "~components/markdown/Markdown";
 
 export default function DiscordEmbed(props: DiscordEmbedProps) {
   const { color, title, url, thumbnail, image, description, author, fields, footer, timestamp } = props;
   const embedColor = color || "#7289da";
+
   return (
     <div className="discord-embed">
       <div className="discord-embed-color" style={{ backgroundColor: `${embedColor}` }}></div>
@@ -13,7 +15,7 @@ export default function DiscordEmbed(props: DiscordEmbedProps) {
         <div className="discord-embed-grid">
           {author && <DiscordEmbedAuthor {...author} />}
           {title && <DiscordEmbedTitle title={title} url={url} />}
-          {description && <div className="discord-embed-description" dangerouslySetInnerHTML={{ __html: description }} />}
+          {description && <Markdown className="discord-embed-description" content={description} />}
           {fields && <DiscordEmbedFields fields={fields} />}
         </div>
         {thumbnail && (
@@ -22,7 +24,7 @@ export default function DiscordEmbed(props: DiscordEmbedProps) {
           </div>
         )}
         {image && <DiscordMessageImage url={image.url} />}
-        {footer || (timestamp && <DiscordEmbedFooter footer={footer} timestamp={timestamp} />)}
+        {footer || timestamp ? <DiscordEmbedFooter footer={footer} timestamp={timestamp} /> : null}
       </div>
     </div>
   );
