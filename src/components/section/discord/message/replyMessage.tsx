@@ -1,17 +1,9 @@
 import Image from "next/image";
 import clsx from "~utils/clsx";
 import VerifiedTag from "../verifiedTag";
+import { DiscordReplyMessageProps } from "~types/discord";
 
-interface Props {
-  name: string;
-  icon_url: string;
-  color?: string;
-  isBot?: boolean;
-  isSlashCommand?: boolean;
-  content: string;
-}
-
-export default function DiscordReplyMessage({ name, icon_url, color, isBot, isSlashCommand, content }: Props) {
+export default function DiscordReplyMessage({ name, icon_url, color, isBot, isSlashCommand, content }: DiscordReplyMessageProps) {
   const nickColor = color ? { color: color } : {};
   const avatar = icon_url ? icon_url : "https://cdn.discordapp.com/attachments/946644664134533161/994533593856614451/unknown.png";
   return (
