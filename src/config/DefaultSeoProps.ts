@@ -35,8 +35,6 @@ export const DefaultSeoProps: DefaultSeoPropsType = {
     { name: "apple-mobile-web-app-title", content: "Nayeon bot Dashboard" },
     { name: "application-name", content: "Nayeon bot" },
     { name: "msapplication-TileColor", content: "#7289DA" },
-    { name: "msapplication-TileImage", content: "/icons/mstile-144x144.png" },
-    { name: "msapplication-config", content: "/icons/browserconfig.xml" },
     { name: "theme-color", content: "#7289DA" },
     { name: "revisit-after", content: "7 days" },
     { property: "og:email", content: "dhafidfz@gmail.com" },
@@ -46,7 +44,7 @@ export const DefaultSeoProps: DefaultSeoPropsType = {
     url: BaseUrl,
     images: [
       {
-        url: `${BaseUrl}/icons/opengraph.png`,
+        url: `${BaseUrl}/opengraph.png`,
         alt: "OpenGraphImage",
         width: 1024,
         height: 512,
