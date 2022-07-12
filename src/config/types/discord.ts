@@ -60,13 +60,20 @@ export interface DiscordEmbedProps extends DiscordEmbedTitleProps {
   timestamp?: any;
 }
 
-interface DiscordReplyMessageProps {
+export interface DiscordReplyMessageProps {
   name: string;
   icon_url: string;
   color?: string;
   isBot?: boolean;
   isSlashCommand?: boolean;
   content: string;
+}
+
+export interface DiscordButtonProps {
+  style: "PRIMARY" | "SECONDARY" | "SUCCESS" | "DANGER" | "LINK";
+  emoji?: string;
+  label: string;
+  href?: string;
 }
 
 export interface DiscordMessageProps {
@@ -79,4 +86,5 @@ export interface DiscordMessageProps {
   content?: string;
   attachment?: string[];
   embeds?: DiscordEmbedProps[];
+  buttons?: DiscordButtonProps[];
 }
