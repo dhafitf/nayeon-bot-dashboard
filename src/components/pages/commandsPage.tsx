@@ -14,12 +14,18 @@ export default function CommandsPage({ commandLists }: commandListsProps) {
 
   const [searchCommand, setSearchCommand] = useState("");
 
-  const filteredCommands = commandLists.filter((command) => {
-    if (selectedCategory !== "") {
-      return command.category === selectedCategory;
-    } else {
-      return command.name.toLowerCase().includes(searchCommand.toLowerCase());
+  const filteredCommandByCategory = commandLists.filter((command) => {
+    if (selectedCategory === "") {
+      return true;
     }
+    return command.category === selectedCategory;
+  });
+
+  const filteredCommandBySearch = filteredCommandByCategory.filter((command) => {
+    if (searchCommand === "") {
+      return true;
+    }
+    return command.name.toLowerCase().includes(searchCommand.toLowerCase());
   });
 
   const handleSearchCommand = (e: any) => {
@@ -67,10 +73,14 @@ export default function CommandsPage({ commandLists }: commandListsProps) {
               </ul>
             </div>
           </div>
-          <div className="flex w-full flex-col gap-3  md:max-w-[80%]">
-            {filteredCommands.map((item, index) => {
-              return <CommandItem key={index} name={item.name} description={item.description} aliases={item.aliases} examples={item.examples} />;
-            })}
+          <div className="flex min-h-[50vh] w-full flex-col gap-3  md:max-w-[80%]">
+            {filteredCommandBySearch.length ? (
+              filteredCommandBySearch.map((item, index) => {
+                return <CommandItem key={index} name={item.name} description={item.description} aliases={item.aliases} usages={item.usages} examples={item.examples} />;
+              })
+            ) : (
+              <div className="rounded bg-[#3c4146] py-[10px] text-center">No commands found</div>
+            )}
           </div>
         </div>
       </Container>
