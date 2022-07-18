@@ -44,7 +44,7 @@ export const DefaultSeoProps: DefaultSeoPropsType = {
     url: BaseUrl,
     images: [
       {
-        url: `${BaseUrl}/opengraph.png`,
+        url: `${BaseUrl}/opengraph.jpg`,
         alt: "OpenGraphImage",
         width: 1024,
         height: 512,
