@@ -3,13 +3,9 @@ import Links from "@other/links";
 import { MdSpaceDashboard, MdNotificationsActive } from "react-icons/md";
 import { FaChartBar } from "react-icons/fa";
 import { socmedFeatureMessage, transtaleFeatureMessage } from "~utils/lib/featureMessageData";
+import { IoLogoGameControllerB } from "react-icons/io";
 
 const upcomingFeatures = [
-  {
-    icon: <MdNotificationsActive />,
-    title: "Role Mention",
-    description: "Want to get notified when there's a new update? This feature will notify you when there is an update.",
-  },
   {
     icon: <MdSpaceDashboard />,
     title: "Dashboard",
@@ -19,6 +15,11 @@ const upcomingFeatures = [
     icon: <FaChartBar />,
     title: "Leveling System",
     description: "Leveling system to make servers more active and increase user engagement.",
+  },
+  {
+    icon: <IoLogoGameControllerB />,
+    title: "Games",
+    description: "Join support server to suggest what game you want to play.",
   },
 ];
 
