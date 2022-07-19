@@ -57,7 +57,7 @@ export default function FooterSection() {
       </Container>
       <div className="w-full pt-3 text-center text-gray-600 md:pt-6">
         © 2022{" "}
-        <a target="_blank" rel="noopener noreferrer" href="https://dhafit.xyz/" className="hover:underline">
+        <a target="_blank" rel="noopener noreferrer" href="https://dhafit.vercel.app/" className="hover:underline">
           dhafitf
         </a>
         , All rights reserved
