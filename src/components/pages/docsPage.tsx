@@ -20,7 +20,7 @@ export default function DocsLayout({ children, title, description }: DocsLayoutP
       <GeneralPage>
         <Container size="md" className="mb-8 md:flex">
           <DocsSidebar />
-          <article className="prose prose-invert w-full py-4 md:my-8 md:ml-16">{children}</article>
+          <article className="prose prose-invert w-full py-4 prose-a:text-anchor-blue md:my-8 md:ml-16">{children}</article>
         </Container>
       </GeneralPage>
     </>
