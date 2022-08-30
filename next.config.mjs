@@ -37,6 +37,11 @@ export default withMDX({
         destination: "/docs/quickstart",
         permanent: false,
       },
+      {
+        source: "/changelog",
+        destination: "/changelog/discord-bot",
+        permanent: false,
+      },
     ];
   },
 });

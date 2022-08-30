@@ -17,16 +17,17 @@ export default function FooterSection() {
         <div className="grid w-full gap-8 max-md:mt-8">
           <div className="row-[1/3]">
             <div className="pb-3 text-lg font-semibold">Quick Links</div>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-2">
               <Links className="hover:underline" href="/commands" text="Commands" />
               <Links className="hover:underline" href="/docs" text="Documentation" />
               <Links className="hover:underline" href="/docs/privacy-policy" text="Privacy Policy" />
               <Links className="hover:underline" href="/docs/terms" text="Terms of Services" />
+              <Links className="hover:underline" href="/changelog" text="Changelog" />
             </div>
           </div>
           <div className="row-[1/3] max-md:text-end">
             <div className="pb-3 text-lg font-semibold">Support Us!</div>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-2">
               <Links className="hover:underline" href="https://www.patreon.com/nayeonbot" text="Patreon" />
               <Links className="hover:underline" href="https://www.buymeacoffee.com/nayeonbot" text="Buy me a coffee" />
             </div>
@@ -56,11 +57,10 @@ export default function FooterSection() {
         </div>
       </Container>
       <div className="w-full pt-3 text-center text-gray-600 md:pt-6">
-        © 2022{" "}
+        © 2022 by{" "}
         <a target="_blank" rel="noopener noreferrer" href="https://dhafit.vercel.app/" className="hover:underline">
           dhafitf
         </a>
-        , All rights reserved
       </div>
     </footer>
   );
