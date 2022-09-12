@@ -1,5 +1,5 @@
 import Container from "@layout/container";
-import clsx from "~/src/utils/clsx";
+import clsx from "~utils/clsx";
 import CommandItem from "@presentational/commandItem";
 import { useState } from "react";
 import { CommandItemProps } from "~types/components";

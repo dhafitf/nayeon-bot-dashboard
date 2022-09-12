@@ -1,4 +1,4 @@
-import clsx from "~/src/utils/clsx";
+import clsx from "~/utils/clsx";
 import { ContainerProps } from "~types/components";
 
 export default function Container(props: ContainerProps) {
