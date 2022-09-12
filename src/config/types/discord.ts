@@ -88,3 +88,30 @@ export interface DiscordMessageProps {
   embeds?: DiscordEmbedProps[];
   buttons?: DiscordButtonProps[];
 }
+
+export type PartialUser = {
+  id: string;
+  username: string;
+  discriminator: string;
+  email: string;
+  iconURL: string;
+};
+
+export type PartialChannel = {
+  id: string;
+  name: string;
+  type: number | string;
+  position: number;
+  parentID: number | string;
+};
+
+export type PartialRoles = {
+  id: string;
+  name: string;
+  color: string | number;
+  permissions: string | number;
+  position: number;
+  managed: boolean;
+  hoist: boolean;
+  isBot: boolean;
+};
