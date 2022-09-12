@@ -30,18 +30,11 @@ export default function CommandUsageItem({ text }: CommandUsageItemProps) {
   };
 
   return (
-    <div className="relative text-xs">
-      <code
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-        onClick={() => copyToClipboard(text)}
-        className="block cursor-pointer rounded bg-[#27292c] py-3 px-3 transition-colors hover:bg-[#191b1d]"
-      >
-        {text}
-      </code>
+    <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={() => copyToClipboard(text)} className="group relative text-xs">
+      <code className="block cursor-pointer rounded bg-[#27292c] py-3 px-3 transition-colors group-hover:bg-[#191b1d]">{text}</code>
       <label
         className={clsx(
-          "absolute top-0 right-0 my-1 mr-4 rounded px-4 py-2 transition-opacity",
+          "absolute top-0 right-0 my-1 mr-4 cursor-pointer rounded px-4 py-2 transition-opacity",
           isHover ? "opacity-1" : "opacity-0",
           tooltipBG,
           isCopied ? "" : "before:tooltip-arrow "
