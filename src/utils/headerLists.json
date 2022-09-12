@@ -1,12 +1,12 @@
 [
   {
-    "text": "Home",
-    "href": "/",
+    "text": "Docs",
+    "href": "/docs",
     "isOutsite": false
   },
   {
-    "text": "Docs",
-    "href": "/docs",
+    "text": "Dashboard",
+    "href": "/server",
     "isOutsite": false
   },
   {
