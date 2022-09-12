@@ -9,7 +9,7 @@ export const socmedFeatureMessage = [
         color: "#EA00FF",
         author: {
           name: "TWICE Instagram update",
-          icon_url: "https://cdn.discordapp.com/attachments/946644664134533161/992087715711565844/channels4_profile.jpg",
+          icon_url: "https://cdn.discordapp.com/attachments/902795352363655209/1016745293959680153/293024524_329700882578840_122881402094170011_n.jpg",
         },
         description: "힐링 \n \\n\\nLink:\\n https://www.instagram.com/p/CDomKI1jvYu/",
         timestamp: "August 8, 2020",
@@ -42,7 +42,7 @@ export const transtaleFeatureMessage = [
         color: "#4752c4",
         author: {
           name: "devzfz#1415",
-          icon_url: "https://cdn.discordapp.com/attachments/946644664134533161/992087715711565844/channels4_profile.jpg",
+          icon_url: "https://cdn.discordapp.com/avatars/939369011773321336/c1aa2d7a6d6ed8ac596e8b5bc30a8314.png?size=2048",
         },
         description: "good morning",
         timestamp: "Japanese → English",
@@ -68,7 +68,7 @@ export const transtaleFeatureMessage = [
         color: "#4752c4",
         author: {
           name: "devzfz#1415",
-          icon_url: "https://cdn.discordapp.com/attachments/946644664134533161/992087715711565844/channels4_profile.jpg",
+          icon_url: "https://cdn.discordapp.com/avatars/939369011773321336/c1aa2d7a6d6ed8ac596e8b5bc30a8314.png?size=2048",
         },
         description: "Selamat pagi",
         timestamp: "Japanese → Indonesian",
