@@ -20,9 +20,12 @@ export default function HeroSection() {
         <p className="pt-6 pb-8 text-lg max-md:text-center">Nayeon bot is a discord bot dedicated to notifying updates from TWICE, and also provides other commands.</p>
         <div className="flex items-center gap-6 max-md:flex-col max-md:justify-center">
           <InviteButton className="w-48 justify-center gap-3 py-2 text-lg" />
-          <Link href="/server">
+          <button disabled className="w-48 cursor-not-allowed rounded-md border-2 border-[#46494D] py-2 text-center text-lg transition-colors hover:bg-[#46494D]">
+            Dashboard
+          </button>
+          {/* <Link href="/server">
             <a className="w-48 cursor-pointer rounded-md border-2 border-[#46494D] py-2 text-center text-lg transition-colors hover:bg-[#46494D]">Dashboard</a>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
