@@ -22,7 +22,7 @@ export default function SubscriptionPage({
   isLoading,
 }: SubsPageProps) {
   return (
-    <div className="mb-8 grid gap-4 lg:grid-cols-2">
+    <div className="mb-8 flex flex-col gap-4 lg:grid lg:grid-cols-2">
       <div className="rounded-lg bg-[#393D42] py-4 px-8">
         <h3 className="pb-6 font-semibold uppercase">Subscribe to {name}</h3>
         <div>
