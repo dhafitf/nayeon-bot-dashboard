@@ -1,11 +1,11 @@
 import type { DefaultSeoProps as DefaultSeoPropsType } from "next-seo";
 import type { AdditionalRobotsProps } from "next-seo/lib/types";
 
-export const BaseUrl = "https://bot.oncetwice.one/";
+export const BaseUrl = "https://bot.oncetwice.one";
 export const DefaultSeoProps: DefaultSeoPropsType = {
   titleTemplate: "%s | Nayeon Bot",
   title: "Home",
-  description: "Nayeon bot is a bot dedicated to notifying updates from TWICE, and also provides other commands.",
+  description: "Nayeon bot is a discord bot dedicated to notifying updates from TWICE, and also provides other commands.",
   canonical: BaseUrl,
   additionalMetaTags: [
     { name: "url", content: BaseUrl },
@@ -15,15 +15,14 @@ export const DefaultSeoProps: DefaultSeoPropsType = {
     { name: "keywords", content: "discord, bot, twice, instagram, update, youtube, vlive, nayeon, jeongyeon, momo, sana, jihyo, mina, dahyun, chaeyoung, tzuyu" },
     {
       name: "summary",
-      content: "Nayeon bot is a bot dedicated to notifying updates from TWICE, and also provides other commands.",
+      content: "Nayeon bot is a discord bot dedicated to notifying updates from TWICE, and also provides other commands.",
     },
     { name: "subject", content: "Dashboard for Nayeon bot." },
     { name: "robots", content: "archive,follow,imageindex,index,odp,snippet,translate" },
     { name: "googlebot", content: "index,follow" },
-    { name: "author", content: `Dhafit Farenza, dhafidfz@gmail.com` },
-    { name: "owner", content: `Dhafit Farenza, dhafidfz@gmail.com` },
-    { name: "designer", content: `Dhafit Farenza, dhafidfz@gmail.com` },
-    { name: "reply-to", content: "dhafidfz@gmail.com" },
+    { name: "author", content: `Dhafit Farenza` },
+    { name: "owner", content: `Dhafit Farenza` },
+    { name: "designer", content: `Dhafit Farenza` },
     { name: "target", content: "all" },
     { name: "audience", content: "all" },
     { name: "coverage", content: "Worldwide" },
@@ -37,7 +36,6 @@ export const DefaultSeoProps: DefaultSeoPropsType = {
     { name: "msapplication-TileColor", content: "#7289DA" },
     { name: "theme-color", content: "#7289DA" },
     { name: "revisit-after", content: "7 days" },
-    { property: "og:email", content: "dhafidfz@gmail.com" },
   ],
   openGraph: {
     title: "Nayeon bot Dashboard",
@@ -45,7 +43,7 @@ export const DefaultSeoProps: DefaultSeoPropsType = {
     images: [
       {
         url: `${BaseUrl}/opengraph.jpg`,
-        alt: "OpenGraphImage",
+        alt: "Nayeon Bot OpenGraphImage",
         width: 1024,
         height: 512,
       },
@@ -63,7 +61,7 @@ export const DefaultSeoProps: DefaultSeoPropsType = {
   twitter: {
     handle: "@DhafitF",
     site: "@DhafitF",
-    cardType: "summary",
+    cardType: "summary_large_image",
   },
 };
 export const robotBlockingPageProps: AdditionalRobotsProps = {
