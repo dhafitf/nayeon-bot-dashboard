@@ -4,10 +4,15 @@ import { useEffect, useState, useRef } from "react";
 import headerLists from "~utils/headerLists.json";
 import clsx from "~utils/clsx";
 import Container from "@layout/container";
-import InviteButton from "@other/inviteButton";
 import { LinkProps } from "~types/components";
+import { useContext } from "react";
+import AuthContext from "~/contexts/authContext";
+import { ProfileMenu } from "./profileMenu";
 
 export default function Navbar() {
+  const userState = useContext(AuthContext);
+  const { user, logout } = userState;
+
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -35,7 +40,7 @@ export default function Navbar() {
                 <a className="whitespace-nowrap text-lg">Nayeon Bot</a>
               </Link>
             </div>
-            <div className="navButton md:hidden" onClick={() => setIsOpen(!isOpen)}>
+            <div className="navButton cursor-pointer md:hidden" onClick={() => setIsOpen(!isOpen)}>
               <span className={clsx(isOpen && "translate-y-[10px] rotate-45")}>&nbsp;</span>
               <span className={clsx(isOpen && "opacity-0")}>&nbsp;</span>
               <span className={clsx(isOpen && "translate-y-[-10px] -rotate-45")}>&nbsp;</span>
@@ -44,16 +49,24 @@ export default function Navbar() {
           <nav
             className={clsx(
               "max-md:fixed max-md:top-0 max-md:h-screen max-md:w-full max-md:flex-col max-md:text-lg",
-              "flex items-center justify-center gap-5 transition-all",
-              isOpen ? "right-0 bg-body" : "-right-full"
+              "flex items-center justify-center gap-5 transition-all md:absolute md:left-2/4 md:top-2/4 md:-translate-y-2/4 md:-translate-x-2/4",
+              isOpen ? "bg-body max-md:right-0" : "max-md:-right-full"
             )}
           >
             {headerLists.map((item: LinkProps, index: number) => {
               const { text, href, isOutsite } = item;
-              return <Links key={index} href={href} className="hover:text-main-color whitespace-nowrap hover:underline" text={text} isOutsite={isOutsite} />;
+              return <Links key={index} href={href} className="whitespace-nowrap font-medium transition-colors hover:text-light-blue" text={text} isOutsite={isOutsite} />;
             })}
-            <InviteButton />
           </nav>
+          <div className="flex items-center max-md:hidden">
+            {user ? (
+              <ProfileMenu onLogout={logout} user={user} />
+            ) : (
+              <Link href="/login">
+                <a className="cursor-pointer rounded-md border-2 border-[#46494D] py-1 px-3 text-sm transition-colors hover:bg-light-blue">Login</a>
+              </Link>
+            )}
+          </div>
         </Container>
       </header>
     </>
