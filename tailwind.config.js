@@ -14,7 +14,7 @@ module.exports = {
       screens: {
         // => @media (min-width: ) { ... }
         md: { min: "768px" },
-        mid: { min: "880px" },
+        mid: { min: "917px" },
         lg: { min: "1280px" },
         xl: { min: "1480px" },
 
