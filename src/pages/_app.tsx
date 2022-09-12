@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { DefaultSeo } from "next-seo";
 import DefaultSeoProps from "~config/DefaultSeoProps";
+import { AuthContextProvider } from "~/contexts/authContext";
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   const router = useRouter();
@@ -40,16 +41,16 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
     };
   }, [router.events]);
 
-  console.log("%cHold Up!", "color: #7289DA; font-weight: bold; font-size: 3em;");
-  console.log("%cYou shouldn't be here.", "font-size: 1.5em;");
-  console.log("%cBut thanks for visiting.\nIf you found bug, please let me know in https://github.com/dhafitf.", "font-size: 1em;");
+  console.log("%cHold Up!", "color: #7289DA; font-weight: bold; font-size: 6em;");
+  console.log("%cIf someone told you to copy/paste something here you have an 11/10 chance you're being scammed.", "font-size: 1.5em;");
+  console.log("%cPasting anything in here could give attackers access to your private information!", "color: red; font-weight: bold; font-size: 1.5em;");
 
   return (
-    <>
+    <AuthContextProvider>
       <DefaultSeo {...DefaultSeoProps} />
       <Loading isRouteChanging={state.isRouteChanging} key={state.loadingKey} />
       <Component {...pageProps} />
-    </>
+    </AuthContextProvider>
   );
 };
 
