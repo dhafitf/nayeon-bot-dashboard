@@ -42,6 +42,11 @@ export default withMDX({
         destination: "/changelog/discord-bot",
         permanent: false,
       },
+      {
+        source: "/login",
+        destination: "https://api.oncetwice.one/auth/discord",
+        permanent: false,
+      },
     ];
   },
 });
