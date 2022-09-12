@@ -1,15 +1,14 @@
 import DiscordMessage from "@section/discord/discordMessage";
 import Links from "@other/links";
-import { MdSpaceDashboard, MdNotificationsActive } from "react-icons/md";
-import { FaChartBar } from "react-icons/fa";
+import { FaChartBar, FaPaperPlane } from "react-icons/fa";
 import { socmedFeatureMessage, transtaleFeatureMessage } from "~utils/lib/featureMessageData";
 import { IoLogoGameControllerB } from "react-icons/io";
 
 const upcomingFeatures = [
   {
-    icon: <MdSpaceDashboard />,
-    title: "Dashboard",
-    description: "Simplify server settings with dashboard.",
+    icon: <FaPaperPlane />,
+    title: "Auto Responder",
+    description: "Make chatting more fun and easy with auto responder.",
   },
   {
     icon: <FaChartBar />,
