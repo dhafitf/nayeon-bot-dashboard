@@ -1,4 +1,4 @@
-import { DiscordMessageContentProps } from "~/src/config/types/discord";
+import { DiscordMessageContentProps } from "~types/discord";
 import VerifiedTag from "../verifiedTag";
 
 export default function DiscordMessageContent(props: DiscordMessageContentProps) {
