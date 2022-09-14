@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { DashboardOverview, DashboardSettings, DashboardYoutube, DashboardInstagram, DashboardVlive, DashboardTiktok } from "@pages/dashboard";
 import axiosReq from "~utils/lib/axiosReq";
 import validateCookies from "~helpers/validateCookies";
+import { inviteBotURL } from "~utils/constants";
 
 export async function getServerSideProps(ctx: GetServerSidePropsContext) {
   const { id }: any = ctx.params;
@@ -16,10 +17,18 @@ export async function getServerSideProps(ctx: GetServerSidePropsContext) {
   });
 
   const selectedGuild = guilds.filter((g: any) => g.id === id[0]);
+  if (!selectedGuild[0]) {
+    return {
+      redirect: {
+        destination: "/server",
+      },
+    };
+  }
+
   if (!selectedGuild[0].mutual) {
     return {
       redirect: {
-        destination: `https://discord.com/oauth2/authorize?client_id=939369011773321336&permissions=139855326334&scope=bot%20applications.commands&guild_id=${id[0]}redirect_uri=https://bot.oncetwice.one/`,
+        destination: inviteBotURL(id[0]),
       },
     };
   }

@@ -10,7 +10,7 @@ export default function axiosReq(headers: any, { method, endpoint, data }: axios
   try {
     if (!headers) return { redirect: { destination: "/" } };
 
-    let config = { method, url: `${process.env.API_URL}${endpoint}`, headers, data };
+    let config = { method, url: `${process.env.NEXT_PUBLIC_API_URL}${endpoint}`, headers, data };
     const res = axios(config).then((response) => response.data);
 
     return res;
