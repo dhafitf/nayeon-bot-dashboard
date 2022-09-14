@@ -9,7 +9,7 @@
       "message": [
         {
           "name": "devzfz",
-          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "icon_url": "https://cdn.discordapp.com/attachments/946644664134533161/1019609295693811732/unknown.png",
           "isBot": false,
           "color": "#4fbf3b",
           "content": ";avatar"
@@ -23,9 +23,9 @@
             {
               "color": "#4752c4",
               "title": "devzfz#1415's avatar",
-              "url": "https://cdn.discordapp.com/avatars/326471015175815179/1661cfa1bc2233373ee29fee0e60ee9d.png",
+              "url": "https://cdn.discordapp.com/attachments/946644664134533161/1019609295693811732/unknown.png?size=2048",
               "image": {
-                "url": "https://cdn.discordapp.com/avatars/939369011773321336/677d9e150f1521716a2188e14ceeca94.png?size=2048"
+                "url": "https://cdn.discordapp.com/attachments/946644664134533161/1019609295693811732/unknown.png?size=2048"
               },
               "timestamp": "Today at 10:18 PM"
             }
@@ -43,7 +43,7 @@
       "message": [
         {
           "name": "devzfz",
-          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "icon_url": "https://cdn.discordapp.com/attachments/946644664134533161/1019609295693811732/unknown.png",
           "isBot": false,
           "color": "#4fbf3b",
           "content": ";banner"
@@ -89,7 +89,7 @@
       "message": [
         {
           "name": "devzfz",
-          "icon_url": "https://cdn.discordapp.com/attachments/946950887480369154/991575129572257862/25cdd9a7f2eb3f8cee43fefcfc0d6100f09c704d.jpg",
+          "icon_url": "https://cdn.discordapp.com/attachments/946644664134533161/1019609295693811732/unknown.png",
           "isBot": false,
           "color": "#4fbf3b",
           "content": ";userinfo"
@@ -105,7 +105,7 @@
               "title": "User profile",
               "description": "Displaying info about the user.",
               "thumbnail": {
-                "url": "https://cdn.discordapp.com/avatars/326471015175815179/1661cfa1bc2233373ee29fee0e60ee9d.png?size=2048"
+                "url": "https://cdn.discordapp.com/attachments/946644664134533161/1019609295693811732/unknown.png"
               },
               "fields": [
                 {
