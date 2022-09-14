@@ -62,12 +62,9 @@ export default function Navbar() {
             {user ? (
               <ProfileMenu onLogout={logout} user={user} />
             ) : (
-              <button disabled className="cursor-not-allowed rounded-md border-2 border-[#46494D] py-1 px-3 text-sm transition-colors hover:bg-light-blue">
-                Login
-              </button>
-              // <Link href="/login">
-              //   <a className="cursor-pointer rounded-md border-2 border-[#46494D] py-1 px-3 text-sm transition-colors hover:bg-light-blue">Login</a>
-              // </Link>
+              <Link href="/login">
+                <a className="cursor-pointer rounded-md border-2 border-[#46494D] py-1 px-3 text-sm transition-colors hover:bg-light-blue">Login</a>
+              </Link>
             )}
           </div>
         </Container>

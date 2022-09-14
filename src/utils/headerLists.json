@@ -5,6 +5,11 @@
     "isOutsite": false
   },
   {
+    "text": "Dashboard",
+    "href": "/server",
+    "isOutsite": false
+  },
+  {
     "text": "Commands",
     "href": "/commands",
     "isOutsite": false
