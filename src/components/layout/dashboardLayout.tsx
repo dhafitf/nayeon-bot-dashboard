@@ -21,7 +21,7 @@ export default function DashboardLayout({ guildID, path, children, guild }: Dash
       <DashboardNavbar navButtonHandler={isOpenSidebar} navbarOnclick={() => setIsOpenSidebar(!isOpenSidebar)} />
       <Container size="xl" className="flex mid:relative">
         <aside className={clsx("absolute w-full transition-all duration-300 mid:left-0 max-mid:z-50", isOpenSidebar ? "left-0" : "-left-3/4")}>
-          <div className="fixed z-10 h-[calc(100vh_-_var(--header-height)_*_1px)] w-[255px] bg-[#393D42] px-6 pt-6">
+          <div className="noScrollBar fixed z-10 h-[calc(100vh_-_var(--header-height)_*_1px)] w-[255px] overflow-y-scroll bg-[#393D42] px-6 pt-6">
             <div>
               <div className="relative mx-auto mb-3 h-[120px] w-[120px] overflow-hidden rounded-full bg-slate-500">
                 {icon ? (
