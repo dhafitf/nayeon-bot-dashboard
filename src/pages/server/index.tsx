@@ -26,7 +26,7 @@ export async function getServerSideProps(ctx: GetServerSidePropsContext) {
 
   const guilds = await axiosReq(headers, {
     method: "get",
-    endpoint: "/guilds",
+    endpoint: "/guilds?update=true",
   });
 
   return {
