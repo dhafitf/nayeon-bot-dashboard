@@ -24,7 +24,8 @@ export default withMDX({
     return [
       {
         source: "/invite",
-        destination: "https://discord.com/oauth2/authorize?client_id=939369011773321336&permissions=139855326334&scope=bot%20applications.commands",
+        destination:
+          "https://discord.com/oauth2/authorize?client_id=939369011773321336&permissions=139855326334&scope=bot%20applications.commands",
         permanent: true,
       },
       {
@@ -44,7 +45,7 @@ export default withMDX({
       },
       {
         source: "/login",
-        destination: "https://api.oncetwice.one/auth/discord",
+        destination: "https://api-bot.oncetwice.one/auth/discord",
         permanent: false,
       },
     ];
